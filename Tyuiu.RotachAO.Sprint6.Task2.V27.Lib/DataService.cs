@@ -6,13 +6,13 @@ namespace Tyuiu.RotachAO.Sprint6.Task2.V27.Lib
     {
         public static double Calculate(double x)
         {
-            double denominator = Math.Cos(x) - 2 * x;
+            double denominator = Math.Cos(x) -2*x;
             if (Math.Abs(denominator) < 1e-9) // Проверка на деление на ноль
             {
                 return 0;
             }
 
-            double result = (2 * x - 3) / denominator + 5 * x - Math.Sin(x);
+            double result = (2*x -3) / denominator + 5 * x - Math.Sin(x);
             return Math.Round(result, 2); // Округление до 2 знаков
         }
 
