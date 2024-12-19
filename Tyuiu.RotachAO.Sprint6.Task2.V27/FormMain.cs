@@ -19,5 +19,10 @@ namespace Tyuiu.RotachAO.Sprint6.Task2.V27
         }
 
         DataService ds = new DataService();
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
