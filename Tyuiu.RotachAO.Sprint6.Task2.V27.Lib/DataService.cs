@@ -13,7 +13,7 @@ namespace Tyuiu.RotachAO.Sprint6.Task2.V27.Lib
             int count = 0;
             for (int i = startValue; i <= stopValue; i++)
             {
-                y = Math.Round((2 * i - 3) / (Math.Cos(i) - 2 * i) + 5 - Math.Sin(i), 2);
+                y = Math.Round((2 * i - 3) / (Math.Cos(i) - 2 * i) + 5 * i - Math.Sin(i), 2);
                 valueArray[count] = y;
                 count++;
             }
