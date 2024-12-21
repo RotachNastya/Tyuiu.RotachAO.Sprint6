@@ -13,7 +13,14 @@ namespace Tyuiu.RotachAO.Sprint6.Task4.V23.Lib
             int count = 0;
             for (int i = startValue; i <= stopValue; i++)
             {
-                y = Math.Round(4 - 2 * i + (2 + Math.Cos(i))/(2 * i - 2), 2);
+                if (2 * i - 2 == 0) // Проверка на деление на ноль
+                {
+                    y = 0.0; // Устанавливаем значение по умолчанию (например, 0.0)
+                }
+                else
+                {
+                    y = Math.Round(4 - 2 * i + (2 + Math.Cos(i)) / (2 * i - 2), 2);
+                }
                 valueArray[count] = y;
                 count++;
             }
